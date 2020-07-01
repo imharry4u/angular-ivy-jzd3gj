@@ -8,7 +8,7 @@ export class ProductListComponent {
   pageTitle: string = "Product List";
   imageWidth: number = 50;
   imageMargin: number = 2;
-  showImage: boolean = false;
+  showImage: boolean = true;
   products: any[] = [
     {
       productId: 1,
@@ -66,6 +66,6 @@ export class ProductListComponent {
     }
   ];
   toggleImage(): void {
-    this.showImage != this.showImage;
+    this.showImage =! this.showImage;
   }
 }
