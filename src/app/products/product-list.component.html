@@ -15,7 +15,7 @@
 				</div>
 			</div>
 			<div class="table-responsive table table-hover table-bordered">
-				<table class='table' *ngIf='products && products.length'>
+				<table class='table' *ngIf='products && products.length' border ="1">
 					<thead>
 						<tr>
 							<th>
@@ -35,7 +35,7 @@
 							<td><img *ngIf='showImage' [src]='product.imageUrl' [title]='product.imageUrl' [style.width.px]='imageWidth' [style.margin.pc]='imageMargin' ></td>
 							<td>{{product.productName}}</td>
 							<td>{{product.productCode | uppercase}}</td>
-							<td>{{product.Code}}</td>
+							<td>{{product.releaseDate}}</td>
 							<td>{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>
 							<td>{{product.starRating}}</td>
 						</tr>
