@@ -19,7 +19,10 @@ import { WelcomeComponent } from "./home/welcome.component";
     ProductDetailComponent,
     WelcomeComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule, 
+    FormsModule, 
+    HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
