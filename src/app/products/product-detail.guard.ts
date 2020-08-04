@@ -7,7 +7,9 @@ import {
 } from "@angular/router";
 import { Observable } from "rxjs";
 
-@Injectable()
+@Injectable({
+  providedIn: "root"
+})
 export class ProductDetailGuard implements CanActivate {
   constructor(private router: Router) {}
 
