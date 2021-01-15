@@ -1,6 +1,6 @@
 <div class='card'>
 	<div class='card-header bg-success'>
-		{{pageTitle}} <a asp-controller="Home" asp-action="Create" class="btn btn-primary pull-right">
+		{{pageTitle}} <a [routerLink]="['/product-create']" class="btn btn-primary pull-right">
 			<i class="fas fa-plus"></i> &nbsp; Create New Product
 		</a>
 	</div>

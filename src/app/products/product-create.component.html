@@ -1,3 +1,35 @@
-<p>
-product-create works!
-</p>
+<!--Card content-->
+
+
+<div class='card'>
+	<div class='card-header bg-success text-white font-weight-bold'>
+		{{pageTitle}} <a [routerLink]="['/products']" class="btn btn-primary pull-right">
+			<i class="fas fa-back"></i> &nbsp; << Back </a> </div> <div class='card-body'>
+				<div class='row bg-info'>
+					<form class="text-center border border-light p-5" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+						<p class="h4 mb-4">Product</p>
+
+						
+						<input type="text" id="productName" name="productName" class="form-control mb-4" placeholder="Product Name" required ngModel>
+
+						
+
+						<input name="first" ngModel required #first="ngModel">
+						<input name="last" ngModel>
+						<button>Submit</button>
+					</form>
+				</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<p>First name value: {{ first.value }}</p>
+<p>First name valid: {{ first.valid }}</p>
+<p>Form value: {{ f.value | json }}</p>
+<p>Form valid: {{ f.valid }}</p>
