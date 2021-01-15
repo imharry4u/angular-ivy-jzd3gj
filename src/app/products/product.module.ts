@@ -8,6 +8,7 @@ import { ProductDetailComponent } from "./product-detail.component";
 import { RouterModule } from "@angular/router";
 import { ProductDetailGuard } from "./product-detail.guard";
 import { SharedModule } from "../shared/shared.module";
+import { ProductCreateComponent } from "./product-create.component";
 
 @NgModule({
   imports: [
@@ -17,14 +18,16 @@ import { SharedModule } from "../shared/shared.module";
         path: "products/:id",
         canActivate: [ProductDetailGuard],
         component: ProductDetailComponent
-      }
+      },
+      { path: "product-create", component: ProductCreateComponent }
     ]),
     SharedModule
   ],
   declarations: [
     ProductListComponent,
-    ConvertToSpacesPipe,    
-    ProductDetailComponent
+    ConvertToSpacesPipe,
+    ProductDetailComponent,
+    ProductCreateComponent
   ]
 })
 export class ProductModule {}
