@@ -1,4 +1,4 @@
- /* @import '~bootstrap/dist/css/bootstrap.min.css';
+/* @import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap/dist/css/font-awesome.min.css';  */
 
 /* You can add global styles to this file, and also import other style files */
@@ -6,17 +6,31 @@
 /* @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/font-awesome.min.css'); */
 
-@import "~bootstrap/dist/css/bootstrap.css"; 
-@import "~font-awesome/css/font-awesome.css"; 
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 
 div.card-header {
- font-size: large;
+  font-size: large;
 }
 
 div.card {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .table {
-  margin-top: 10px
+  margin-top: 10px;
+}
+.navbar-custom {
+  background-color: darkblue;
+} /* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: rgba(255, 255, 255, 0.8);
+} /* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+} /* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
 }

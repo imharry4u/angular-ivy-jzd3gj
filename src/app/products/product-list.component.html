@@ -28,6 +28,7 @@
 							<th>Available</th>
 							<th>Price</th>
 							<th>5 Start Rating</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -41,6 +42,12 @@
 								<pm-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'>
 								</pm-star><br>{{product.starRating}}
 							</td>
+							<td> <a class="btn btn-primary mx-2">
+									<i class="fas fa-edit"></i>
+								</a>
+								<a class="btn btn-danger mx-2">
+									<i class="far fa-trash-alt"></i>
+								</a></td>
 						</tr>
 					</tbody>
 				</table>
