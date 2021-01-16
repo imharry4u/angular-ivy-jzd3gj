@@ -1,25 +1,19 @@
 <!--Card content-->
-
+<!-- main app container -->
 
 <div class='card'>
-	<div class='card-header bg-success text-white font-weight-bold'>
+	<h5 class='card-header bg-success text-white font-weight-bold'>
 		{{pageTitle}} <a [routerLink]="['/products']" class="btn btn-primary pull-right">
-			<i class="fas fa-back"></i> &nbsp; << Back </a> </div> <div class='card-body'>
-				<div class='row bg-info'>
-					<form class="text-center border border-light p-5" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-						<p class="h4 mb-4">Product</p>
+			<i class="fas fa-back"></i> &nbsp; << Back </a> </h5> <div class='card-body'>
 
-						
-						<input type="text" id="productName" name="productName" class="form-control mb-4" placeholder="Product Name" required ngModel>
-
-						
-
-						<input name="first" ngModel required #first="ngModel">
-						<input name="last" ngModel>
-						<button>Submit</button>
-					</form>
-				</div>
-	</div>
+				<form class="text-center border border-light p-5" #f="ngForm" (ngSubmit)="onSubmit(f)" validate>
+					<input type="text" id="productName" name="productName" #productName="ngModel" placeholder="Product Name"  class="form-control-lg mb-4"  required ngModel><br>
+					<input type="text" id="productCode" name="productCode" class="form-control-lg mb-4" placeholder="Product Code" required ngModel><br>
+					<input type="text" id="releaseDate" name="releaseDate" class="form-control-lg mb-4" placeholder="Release Date" required ngModel><br>
+					<input type="text" id="price" name="price" class="form-control-lg mb-4" placeholder="Price" required ngModel><br>
+					<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+				</form>
+</div>
 </div>
 
 
@@ -29,7 +23,8 @@
 
 
 
-<p>First name value: {{ first.value }}</p>
+
+<!-- <p>First name value: {{ productName.value }}</p>
 <p>First name valid: {{ first.valid }}</p>
 <p>Form value: {{ f.value | json }}</p>
-<p>Form valid: {{ f.valid }}</p>
+<p>Form valid: {{ f.valid }}</p> -->
