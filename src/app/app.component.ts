@@ -22,7 +22,7 @@ import { Component } from "@angular/core";
     </div>
     <footer class="border-top footer text-white bg-primary">
       <div style="text-align:center">
-        &copy; 2021 - ACME Product Management -
+        &copy; 2021 - ACME Product Management - Angular 9.1.1
         <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
       </div>
     </footer>
